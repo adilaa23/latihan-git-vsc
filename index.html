@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML & CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: bisque;
+        }
+
+        .wrapper{
+            max-width: 1000px;
+            margin: 30px auto;
+            background-color: aqua;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 1px 4px #aaa;
+        }
+
+        .input-wrapper{
+            width: calc (100% - 20px);
+            margin-top: 4px;
+            margin-bottom: 8px;
+            padding: 10px;
+        }
+
+        .submit{
+            width: 100%;
+            margin-top: 20px;
+            border-radius: 6px;
+            background-color: #4072b8;
+            cursor: pointer;
+            color: white;
+            border: none;
+            padding: 10px 0;
+        }
+
+        .submit:hover{
+            opacity: 0.8;
+            transition: 0.5s;
+        }
+
+        .student-table{
+            width: 100%;
+        }
+
+        th{
+            background-color: #4072b8;
+            padding: 6px 0;
+            color: white;
+        }
+
+        td{
+            padding: 6px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tr:hover{
+            background: burlywood;
+            transition: 1s;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>List of Awesome Student</h1>
+        <p>List of todays student</p>
+        <table class="student-table">
+            <thead>
+                <tr>
+                    <th>Nomor</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Email</th>
+                    <th>Date of Birth</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Lee Taeyong</td>
+                    <td>28</td>
+                    <td>taeoxo_nct@gmail.com</td>
+                    <td>01/07/1995</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Moon Taeil</td>
+                    <td>29</td>
+                    <td>mo.on_air@gmail.com</td>
+                    <td>14/06/1994</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Johnny Suh</td>
+                    <td>29</td>
+                    <td>johnnyjsuh@gmail.com</td>
+                    <td>09/02/1995</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Yuta Nakamoto</td>
+                    <td>28</td>
+                    <td>yuu_taa_1026@gmail.com</td>
+                    <td>26/10/1995</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Qian Kun</td>
+                    <td>28</td>
+                    <td>kun11xd@gmail.com</td>
+                    <td>01/01/1996</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Kim Dong-Young (Doyoung)</td>
+                    <td>28</td>
+                    <td>do0_nct@gmail.com</td>
+                    <td>01/02/1996</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Chittaphon Leechaiyapornkul (Ten)</td>
+                    <td>28</td>
+                    <td>tenlee_1001@gmail.com</td>
+                    <td>27/02/1996</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Jung Jae Hyun</td>
+                    <td>27</td>
+                    <td>_jeongjaehyunk@gmail.com</td>
+                    <td>14/02/1997</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Dong Sicheng (Winwin)</td>
+                    <td>26</td>
+                    <td>wwiinn_7@gmail.com</td>
+                    <td>28/10/1997</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Kim Jungwoo</td>
+                    <td>26</td>
+                    <td>sugaringcandy@gmail.com</td>
+                    <td>19/02/1998</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Wong Yukhei (Lucas)</td>
+                    <td>25</td>
+                    <td>lucas_xx444@gmail.com</td>
+                    <td>25/01/1999</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Mark Lee</td>
+                    <td>24</td>
+                    <td>onyourm_ark@gmail.com</td>
+                    <td>01/08/1999</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>Xiao De Jun (Xiaojun)</td>
+                    <td>24</td>
+                    <td>djxiao_888@gmail.com</td>
+                    <td>08/08/1999</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>Huang Guan Heng (Hendery)</td>
+                    <td>24</td>
+                    <td>i_m_hendery@gmail.com</td>
+                    <td>28/09/1999</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>Huang Renjun</td>
+                    <td>24</td>
+                    <td>yellow_3to3@gmail.com</td>
+                    <td>23/03/2000</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>Lee Je No</td>
+                    <td>24</td>
+                    <td>leejen_o_423@gmail.com</td>
+                    <td>23/04/2000</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>Lee Dong-Hyuck (Haechan)</td>
+                    <td>23</td>
+                    <td>haechanahceah@gmail.com</td>
+                    <td>06/06/2000</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>Na Jaemin</td>
+                    <td>23</td>
+                    <td>na.jaemin0813@gmail.com</td>
+                    <td>13/08/2000</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>Liu Yangyang</td>
+                    <td>23</td>
+                    <td>yangyang_x2@gmail.com</td>
+                    <td>10/10/2000</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>Shotaro Osaki</td>
+                    <td>23</td>
+                    <td>_shotaroo_@gmail.com</td>
+                    <td>25/11/2000</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>Jung Sung Chan</td>
+                    <td>22</td>
+                    <td>sungchan_1019@gmail.com</td>
+                    <td>13/09/2001</td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>Zhong Chenle</td>
+                    <td>22</td>
+                    <td>kh1000le@gmail.com</td>
+                    <td>22/11/2001</td>
+                </tr>
+                <tr>
+                    <td>23</td>
+                    <td>Park Jisung</td>
+                    <td>22</td>
+                    <td>the__and.y@gmail.com</td>
+                    <td>05/02/2001</td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td>Oh Si On (Sion)</td>
+                    <td>22</td>
+                    <td>sionaxd@gmail.com</td>
+                    <td>11/05/2002</td>
+                </tr>
+                <tr>
+                    <td>25</td>
+                    <td>Maeda Riku</td>
+                    <td>20</td>
+                    <td>riku_nct@gmail.com</td>
+                    <td>28/06/2003</td>
+                </tr>
+                <tr>
+                    <td>26</td>
+                    <td>Tokuno Yushi</td>
+                    <td>20</td>
+                    <td>yushiaxs@gmail.com</td>
+                    <td>05/04/2004</td>
+                </tr>
+                <tr>
+                    <td>27</td>
+                    <td>Kim Daeyoung (Jaehee)</td>
+                    <td>18</td>
+                    <td>_jae_hee@gmail.com</td>
+                    <td>21/06/2005</td>
+                </tr>
+                <tr>
+                    <td>28</td>
+                    <td>Hirose Ryo</td>
+                    <td>16</td>
+                    <td>ryo_am@gmail.com</td>
+                    <td>04/08/2007</td>
+                </tr>
+                <tr>
+                    <td>29</td>
+                    <td>Fujinaga Sakuya</td>
+                    <td>16</td>
+                    <td>_sakuya.nct@gmail.com</td>
+                    <td>18/11/2007</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
